@@ -1,23 +1,18 @@
-@font-face {
-	font-family: levibrush;
-	src: url(../fonts/levibrush.ttf);
-}
-
-@media all and (max-width: 1200px) { /* screen size until 1200px */
-	.jumbotron {
-		font-size: 1.5em; /* 1.5x default size */
+/*@media all and (max-width: 1200px) { 
+	.h1 {
+		font-size: 1.5em; 
 	}
 }
-@media all and (max-width: 1000px) { /* screen size until 1000px */
-	.jumbotron {
-		font-size: 1.2em; /* 1.2x default size */
+@media all and (max-width: 1000px) { 
+	.h1 {
+		font-size: 1.2em; 
 	}
 }
-@media all and (max-width: 700px) { /* screen size until 500px */
-	.jumbotron {
-		font-size: 0.7em; /* 0.8x default size */
+@media all and (max-width: 700px) { 
+	.h1 {
+		font-size: 0.7em; 
 	}
-}
+}*/
 
 .navbar {
 	padding-left: 5em;
@@ -47,14 +42,6 @@ footer {
 	line-height:20%;
 }
 
-h3 {
-	padding-bottom: 0.2em;
-	font-family: sans-serif;
-	padding-right: 1em;
-	padding-left: 1em;
-	font-size: 30px;
-}
-
 .front {
 	text-align:center;
 	top-padding: 20px;
@@ -65,7 +52,6 @@ h3 {
 .front h1 {
 	font-size: 5em;
 	color: white;
-	margin-top: .5em;
 	margin-bottom: .5em;
 	font-family: 'Lobster', sans-serif;
 }
@@ -85,3 +71,6 @@ body {
 	padding-left: 2em;
 }
 
+img {
+	margin-bottom: .5em;
+}

@@ -11,41 +11,8 @@
 
 	<script src="js/respond.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type='text/javascript' src='js/custom.js'></script>
-	<script>
-		$(document).ready(function() {
-			$('img').click(function(){
-				$('img').animate({  borderSpacing: 90 }, {
-					step: function(now,fx) {
-						$(this).css('-webkit-transform','rotate('+now+'deg)'); 
-						$(this).css('-moz-transform','rotate('+now+'deg)');
-						$(this).css('transform','rotate('+now+'deg)');
-					},
-					duration:'slow'
-				},'linear');
-				$('img').animate({  borderSpacing: 0 }, {
-					step: function(now,fx) {
-						$(this).css('-webkit-transform','rotate('+now+'deg)'); 
-						$(this).css('-moz-transform','rotate('+now+'deg)');
-						$(this).css('transform','rotate('+now+'deg)');
-					},
-					duration:'slow'
-				},'linear');
-				$('img').animate({  borderSpacing: -360*5 }, {
-					step: function(now,fx) {
-						$(this).css('-webkit-transform','rotate('+now+'deg)'); 
-						$(this).css('-moz-transform','rotate('+now+'deg)');
-						$(this).css('transform','rotate('+now+'deg)');
-					},
-					duration:'slow'
-				},'linear');
-				setTimeout(function(){
-					var url = "aboutus.html";    
-					$(location).delay(800).attr('href',url);
-				}, 2000);
-			});
-		});
-	</script>
+	<script type='text/javascript' src='js/qrcode.min.js'></script>
+
 </head>
 <body>
 	<div class="row">
@@ -59,17 +26,17 @@
 			</div>
 			<div class="collapse navbar-collapse" id="collapse">
 				<ul class="nav navbar-nav">
-					<li><a href="#">Home</a></li>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="qrcode.html">Generate Your PHONEBELL</a></li>
-					<li><a href="#contact">page3</a></li>
+					<li><a href="#contact">page3</a></li>  
 				</ul> 
 			</div>
 		</nav> 
 	</div>
 	<div class="container front">
 		<div class="row">
-			<img src="img/bell.png">
-			<h1>PHONEBELL</h1>
+			<h1>About Us</h1>
+			<p></p>
 		</div>
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="js/lightbox.js"></script>

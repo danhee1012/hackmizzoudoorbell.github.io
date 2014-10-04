@@ -74,3 +74,11 @@ body {
 img {
 	margin-bottom: .5em;
 }
+
+.logo {
+	font-family: 'Lobster', sans-serif;
+}
+
+#hidden {
+	visibility: hidden;
+}

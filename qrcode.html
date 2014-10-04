@@ -23,6 +23,7 @@
 					<span class="glyphicon glyphicon-arrow-down"></span>
 					MENU
 				</button>
+				<a class="navbar-brand logo" href="#">PHONEBELL</a>
 			</div>
 			<div class="collapse navbar-collapse" id="collapse">
 				<ul class="nav navbar-nav">
@@ -45,15 +46,16 @@
 				});
 
 				function makeCode () {		
-					var elText = document.getElementById("text");
-
-					if (!elText.value) {
+					var elText = "http://hackmizzouphonebell.ngrok.com/ding?PhoneNumber="+document.getElementById("text").value;
+					console.log(typeof elText)
+					var f = "Abab";
+					if (!elText) {
 						alert("Input a text");
 						elText.focus();
 						return;
 					}
 
-					qrcode.makeCode(elText.value);
+					qrcode.makeCode(elText);
 				}
 
 				makeCode();

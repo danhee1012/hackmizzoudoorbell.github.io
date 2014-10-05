@@ -58,7 +58,6 @@
 			</div>
 
 			<div id="qrcode"></div>
-			<button class="btn btn-default hidden">Printable Version</button>
 			<script type="text/javascript">
 				var qrcode = new QRCode(document.getElementById("qrcode"), {
 					width : 140,
@@ -103,18 +102,11 @@
 				$("#text").
 				on("blur", function () {
 					makeCode();
-					$(".hidden").removeClass('hidden');
 				}).
 				on("keydown", function (e) {
 					if (e.keyCode == 13) {
 						makeCode();
-						$(".hidden").removeClass('hidden');
 					}
-				});
-				
-				$(".hidden").click(function() {
-					window.open('print.html', 'scrollbars=no,menubar=no,height=600,width=800,resizable=no,toolbar=no,status=no');
-
 				});
 			</script>
 		</div>

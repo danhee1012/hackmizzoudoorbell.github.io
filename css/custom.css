@@ -90,8 +90,13 @@ input {
 	border-bottom: 50px;
 }
 
-.radio-inline {
+.radio {
 	vertical-align: text-bottom;
 	color: white;
 	font-size: 1em;
+	paddig-top: 5px;
+}
+
+.controls {
+	width: 100px;
 }

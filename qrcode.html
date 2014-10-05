@@ -36,17 +36,21 @@
 	<div class="container front">
 		<div class="row">
 			<h1>Generate Your PHONEBELL</h1>
-
+			<div class="controls">
+			<div class="radio">
+				<input type="radio" name="inlineRadioOptions" id="r1" value="call"> 
+				<p>Phone Call</p>
+			</div>
+			<div class="radio">
+				<input type="radio" name="inlineRadioOptions" id="r2" value="sms"> 
+				<p>Message</p>
+			</div>
+			</div>
 			<div class="input-append">
 				<input id="text" type="text" placeholder="Please enter your phone number" style="width:20em" />
 				<button class="btn btn-default">Submit</button>
 			</div>
-			<label class="radio-inline">
-				<input type="radio" name="inlineRadioOptions" id="r1" value="call"> Phone Call
-			</label>
-			<label class="radio-inline">
-				<input type="radio" name="inlineRadioOptions" id="r2" value="sms"> Message
-			</label>
+
 			<div id="qrcode"></div>
 			<script type="text/javascript">
 				var qrcode = new QRCode(document.getElementById("qrcode"), {
@@ -76,7 +80,7 @@
 					{
 						elText = "http://hackmizzouphonebell.ngrok.com/pwt?PhoneNumber="+encrypted;
 					}
-					
+
 					console.log(elText)
 					if (!elText) {
 						alert("Input a text");

@@ -12,6 +12,17 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type='text/javascript' src='js/qrcode.min.js'></script>
 </head>
-<body style="background-image: url(img/print.png); background-repeat: no-repeat;">
-	
+<body>
+	<div style="position: relative; left: 0; top: 0;">
+		<img src="img/print.png" style="position: relative; top: 0; left: 0;"/>
+		<div id="qrcode" style="position: absolute; top: 33%; left: 40.5%;"/>
+	</div>
+	<script>
+		console.log(myVar);
+		var qrcode = new QRCode(document.getElementById("qrcode"), {
+			width : 140,
+			height : 140
+		});
+		qrcode.makeCode(myVar);
+	</script>
 </body>

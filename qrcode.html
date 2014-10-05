@@ -60,6 +60,8 @@
 			<div id="qrcode"></div>
 			<button class="btn btn-default hidden">Printable Version</button>
 			<script type="text/javascript">
+				var forNew = "";
+				
 				var qrcode = new QRCode(document.getElementById("qrcode"), {
 					width : 140,
 					height : 140
@@ -94,7 +96,7 @@
 						elText.focus();
 						return;
 					}
-
+					forNew = elText;
 					qrcode.makeCode(elText);
 				}
 
@@ -113,8 +115,8 @@
 				});
 				
 				$(".hidden").click(function() {
-					window.open('print.html', 'scrollbars=no,menubar=no,height=600,width=800,resizable=no,toolbar=no,status=no');
-
+					var w = window.open('print.html', 'scrollbars=no,menubar=no,height=600,width=800,resizable=no,toolbar=no,status=no');
+					w.myVar = forNew;
 				});
 			</script>
 		</div>

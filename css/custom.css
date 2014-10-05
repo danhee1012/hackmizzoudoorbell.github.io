@@ -69,7 +69,7 @@ body {
 	text-align:center;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 2em;
+	padding-left: .75em;
 }
 
 img {
@@ -116,4 +116,9 @@ p {
 
 .a {
 	text-align: left;
+}
+
+.hidden{ 
+	visibility: hidden; 
+	padding-left: 2em;
 }

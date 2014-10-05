@@ -28,62 +28,16 @@
 				<ul class="nav navbar-nav">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="qrcode.html">Generate Your PHONEBELL</a></li>
-					<li><a href="contact.html">Contact</a></li>  
+					<li><a href="#contact">page3</a></li>  
 				</ul> 
 			</div>
 		</nav> 
 	</div>
 	<div class="container front">
 		<div class="row">
-			<h1>Generate Your PHONEBELL</h1>
-			<div class="input-append">
-				<input id="text" type="text" placeholder="Please enter your phone number" style="width:20em" />
-				<button class="btn btn-default">Submit</button>
-			</div>
-			
-			<div id="qrcode"></div>
-			<script type="text/javascript">
-				var qrcode = new QRCode(document.getElementById("qrcode"), {
-					width : 100,
-					height : 100
-				});
-				function crypt(input, key) {
-					var output = "";
-					for (var i = 0; i < input.length; i++) {
-						var c = input.charCodeAt(i);
-						output += String.fromCharCode(c + key);  // Copy
-					}
-					return output;
-				}
-
-				function makeCode () {	
-					var phoneNo = document.getElementById("text").value;
-					var encrypted = crypt(phoneNo,-4);
-					var elText = "http://hackmizzouphonebell.ngrok.com/ding?PhoneNumber="+encrypted;
-					console.log(elText)
-					if (!elText) {
-						alert("Input a text");
-						elText.focus();
-						return;
-					}
-
-					qrcode.makeCode(elText);
-				}
-
-				makeCode();
-
-				$("#text").
-				on("blur", function () {
-					makeCode();
-				}).
-				on("keydown", function (e) {
-					if (e.keyCode == 13) {
-						makeCode();
-					}
-				});
-			</script>
+			<h1>About Us</h1>
+			<p></p>
 		</div>
-	</div>
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-</body>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		</body>

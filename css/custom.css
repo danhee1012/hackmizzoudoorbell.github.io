@@ -82,3 +82,8 @@ img {
 #hidden {
 	visibility: hidden;
 }
+
+input {
+	height: 33px;
+	border-radius: .25em;
+}
